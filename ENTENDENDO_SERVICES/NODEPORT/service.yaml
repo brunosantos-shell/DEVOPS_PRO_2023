@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-api-conversao2023nodeport
+spec:
+  selector:
+    app: api-conversao2023-NodePort
+    app: nodeport
+  ports:
+  - port: 30003
+    targetPort: 8080
+  type: NodePort

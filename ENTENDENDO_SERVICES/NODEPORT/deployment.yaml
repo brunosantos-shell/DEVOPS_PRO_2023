@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployapi-conversao2023nodeport
+spec:
+  selector:
+    matchLabels:
+      app: api-conversao2023-NodePort
+      app: nodeport
+  template:
+    metadata:
+      labels:
+        app: api-conversao2023-NodePort
+        app: nodeport
+    spec:
+      containers:
+      - name: apiconversao-services
+        image: kubedevio/api-conversao:v1-machine-name
+
