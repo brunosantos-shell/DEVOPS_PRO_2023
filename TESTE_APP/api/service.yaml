@@ -13,7 +13,6 @@ spec:
   - port: 443
     targetPort: 443
     name: https
-    nodePort: 30008
-    
+    nodePort: 30008 
   type: NodePort
 
